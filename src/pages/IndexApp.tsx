@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-import '../assets/styles/index.scss'
+import MainTitle from '../components/MainTitle';
 
-function IndexApp() {
+const IndexApp = () => {
   return (
-    <div>
-      <h1 className="index_title">IndexPage</h1>
+    <div className="inner">
+      <MainTitle title={'퍼블리싱 가이드'} />
       <ul className='link_list'>
         <li>
-          <Link to='/TestApp' className="btn_link">move To TestPage</Link>
+          <Link to='TestApp' className="btn_link">가이드 목록</Link>
         </li>
       </ul>
     </div>

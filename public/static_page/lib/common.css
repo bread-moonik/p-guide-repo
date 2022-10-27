@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+pre{
+  padding: 20px 0;
+  color: #fff;
+}
+.html-bracket{
+  color: #c792e9;
+}
+.html-attr-name,
+.css-tag{
+  color: #ffcb6b;
+}
+.html-tag-name{
+  color: #f07178
+}
+.html-note{
+  color: #009a68;
+}
+.css-style{
+  color: #88ddff;
+}
