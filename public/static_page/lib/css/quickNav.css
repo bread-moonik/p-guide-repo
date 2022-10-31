@@ -1,0 +1,37 @@
+body{height:200vh}
+
+/* quick Nav */
+.quick_nav_box{position: fixed; right: 50px; bottom: 36px; z-index: 9000;} 
+.quick_nav_box.is_active{position: absolute; bottom: 320px;}
+.quick_item .btn{position: relative; margin-bottom: 10px; width: 50px; height: 50px; font-size: 16px; letter-spacing: -0.4px; border-radius: 50px; background-position: center center !important; box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);}
+.quick_item .btn .desc{position: absolute; overflow: hidden; opacity: 0; top: 50%; right: 100%; margin-right: 14px; width: 0; height: 30px; color: #4c4c4c; font-size: 12px; text-align: center; line-height: 30px; border-radius: 15px; background-color: #4c4c4c; transform: translateY(-50%); box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); transition: width 0.2s, opacity 0.2s;}
+
+/* background ico setting */
+.quick_item .btn.faq{background-image: url("../../static/images/ico/ico_faq_x2.png"); background-size: 23px 23px;}
+.quick_item .btn.newsletter{background-image: url("../../static/images/ico/ico_letter_x2.png"); background-size: 21px 14px;}
+
+/* btn_top */
+.quick_item.item_btn_top { height: 0; overflow: hidden; transition: all .3s; }
+.quick_item.item_btn_top.is_active { height: 50px; overflow: visible;}
+.quick_item .btn.btn_top{ color: #fff; border-color: #ff3232; background-color: #ff3232; background-image: url("../../static/images/ico/ico_btn_top_x2.png"); background-size: 19px 22px;}
+
+@media screen and (min-width: 1920px) {
+  .quick_nav_box{right: 50%; bottom: 36px; margin-right: -910px;} 
+}
+
+@media screen and (min-width: 1024px) { 
+  .quick_item .btn:hover .desc{opacity: 1; width: 80px; color: #fff;}
+}
+
+@media screen and (max-width: 690px) {
+  .quick_nav_box{right: 5.92vw; bottom: 13.16vw;}
+  .quick_item .btn.btn_top{background-size: 4.34vw 5.26vw}
+  .quick_item .btn:not(.btn.btn_top){display: none;}
+}
+
+@media screen and (max-width: 450px) {
+  .quick_nav_box.is_active{bottom: 100vw}
+  .quick_nav_box{right: 5.92vw; bottom: 13.16vw;}
+  .quick_item .btn.btn_top{background-size: 4.34vw 5.26vw}
+  .quick_item .btn:not(.btn.btn_top){display: none;}
+}

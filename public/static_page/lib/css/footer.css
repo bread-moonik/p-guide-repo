@@ -1,0 +1,43 @@
+.footer{position: relative; z-index: 8000; min-height:370px; max-height: 370px; background: #1e1e1e;}
+.footer .inner{padding:64px 70px 75px ; max-width: 1920px;}
+.footer_tit{margin-bottom: 65px; color: #fff; font-size: 60px; font-weight: 500; letter-spacing: -1.2px; line-height: 1.45}
+.footer .address{ color: #666; font-size: 12px; line-height: 1.67}
+.footer .address i{display: inline-block; vertical-align: middle;}
+.footer .address i+i{margin-left: 10px;}
+.footer .address .copyright{display: block; margin-left: 0;}
+.footer .footer_logo{opacity: .35; margin-bottom: 10px; width: 104px; height: 12px; background: transparent url("../../static/images/img_footer_logo_x2.png") no-repeat left center / 100% auto; text-indent: -9999px;}
+.footer_content{display: flex; flex-wrap: wrap; flex-direction: row; justify-content: space-between; align-items: flex-end;}
+
+
+@media screen and (max-width: 1280px) {
+  .footer .address{width: 65%; max-width: none;}
+  .footer .address i.brpoint{margin-left: 0;}
+}
+
+@media screen and (min-width: 1024px) { 
+}
+
+@media screen and (max-width: 960px){
+  .footer{min-height:auto; max-height: none;}
+  .footer .inner{padding:48px 40px; max-width: none;}
+  .footer_tit{margin-bottom: 50px; font-size:54px; letter-spacing: -1.08px; }
+  .footer .address{width: 52.76%;}
+  .footer .footer_logo{margin-bottom: 20px; }
+}
+
+@media screen and (max-width: 690px) {
+  .footer .inner{padding: 6.58vw 5.56vw 13.16vw}
+  .footer_tit{margin-bottom: 4.17vw; font-size: 6.94vw;}
+  .footer .footer_logo{margin-bottom: 1.32vw; width: auto; height: 2.08vw; background-size: contain}
+  .footer .address{width: 100%; font-size: 2.78vw;}
+  .footer .address i{display: block; margin-left: 0 !important}
+  .footer .address .copyright{margin-top: 4.17vw;}
+}
+
+@media screen and (max-width: 450px) {
+  .footer .inner{padding: 6.58vw 5.92vw 13.16vw}
+  .footer_tit{margin-bottom: 5.79vw; font-size: 7.11vw;}
+  .footer .footer_logo{margin-bottom: 1.32vw; width: 24.21vw; height: 2.78vw; background-size: contain}
+  .footer .address{font-size: 3.33vw;}
+  .footer .address .copyright{margin-top: 6.58vw;}
+}

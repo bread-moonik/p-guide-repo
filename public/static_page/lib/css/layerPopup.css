@@ -1,0 +1,31 @@
+/* layer popup */
+.layer_popup{position: fixed; right: 70px; top: 70px; z-index: 9999; color: #fff; }
+.layer_popup_box .inner_popup{display: flex; flex-direction: row;}
+.layer_popup_box .popup_content{width: 440px; background-color: rgba(0, 0, 0, .6)}
+.layer_popup_box .popup_content+.popup_content{margin-left: 10px;}
+.layer_box{display: none; }
+.layer_box.is_active{display: block; }
+/* 하단 텍스트 박스 */
+.layer_popup .box_txt{display: flex; flex-wrap: wrap; flex-direction: row; justify-content: space-between;align-items:center; padding: 15px;}
+.layer_popup .chk_wrap .inp_chk + label{display: inline-block; outline: 0; margin-right: 5px; cursor: pointer;}
+.layer_popup .chk_wrap .inp_chk + label span{vertical-align: middle;}
+.layer_popup .chk_wrap .inp_chk + label:before{content:""; display: inline-block; margin-right: 10px; width: 15px; height: 15px; background: url('../../static/images/ico/ico_chk_frame_x2.png') no-repeat center / 100% 100% ; vertical-align: middle;}
+.layer_popup .chk_wrap .inp_chk:checked + label:before{background-image:url('../../static/images/ico/ico_chk_frame_on_x2.png');}
+.layer_popup .btn_close {color: #fff;}
+
+@media screen and (max-width: 960px){
+.layer_popup{position: fixed; left: 0; right: 0; top: 0; bottom: 0; width: 100%; height: 100%;  background: rgba(0, 0, 0, .6);}
+.layer_popup .inner_popup{ position:absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 60vw;}
+.layer_popup_box .popup_content{background: none;}
+.layer_popup .box_txt{padding: 4vw 0;}
+.layer_popup .box_txt *{font-size: 3vw;}
+.layer_popup .chk_wrap .inp_chk + label:before{width: 3vw; height: 3vw;}
+ 
+}
+
+@media screen and (max-width: 450px) {
+.layer_popup .inner_popup{width: 85vw;}
+.layer_popup .box_txt *{font-size: 4.5vw;}
+.layer_popup .chk_wrap .inp_chk + label:before{width: 4.5vw; height: 4.5vw;}
+.layer_popup .chk_wrap .inp_chk + label span{vertical-align: -0.25vw;}
+}

@@ -27,7 +27,7 @@ function TestApp() {
         <SubTitle subTitle={"3. 웹 접근성"}/>
         <ul className="link_list">
           <li>a. 개요</li>
-          <li>b. 가이드 문서</li>
+          <li><Link to='webAccess' className="btn_link">b. 가이드 문서</Link></li>
         </ul>
       </div>
       <div className={"box"}>
