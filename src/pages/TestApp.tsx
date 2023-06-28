@@ -14,6 +14,7 @@ function TestApp() {
           <li>a. HTML</li>
           <li>b. CSS</li>
           <li>c. Javascript</li>
+          <li>d. Test</li>
         </ul>
       </div>
       <div className={"box"}>
